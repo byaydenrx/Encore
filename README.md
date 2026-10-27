@@ -18,15 +18,22 @@ Because builds are signed ad hoc (not with a paid Apple Developer ID), macOS tre
 
 ## Install
 
+**Download:** get [Encore.zip](https://github.com/byaydenrx/Encore/releases/latest/download/Encore.zip) from the [latest release](https://github.com/byaydenrx/Encore/releases/latest) (Apple silicon and Intel, macOS 26 or later).
+
+1. Double-click `Encore.zip` to unzip it, and drag **Encore** into your Applications folder.
+2. Open it. Because the app isn't notarized by Apple, macOS says it can't verify it: click **Done**.
+3. Open System Settings › Privacy & Security, scroll down to “Encore was blocked”, click **Open Anyway** and confirm. You only do this once.
+4. Encore asks for **Accessibility** access: turn it on in System Settings › Privacy & Security › Accessibility. It also asks once to control Music.
+
+**Or build it yourself** (no Gatekeeper prompt), with Swift 6 from the Xcode Command Line Tools (`xcode-select --install`) or Xcode:
+
 ```sh
-git clone https://github.com/Byaydenrx/Encore.git
+git clone https://github.com/byaydenrx/Encore.git
 cd Encore
 ./install.sh
 ```
 
-`install.sh` builds Encore from source, copies it to `~/Applications` and opens it. To only build: `./build.sh` makes `build/Encore.app` (universal: Apple silicon and Intel). Either needs Swift 6 from the Xcode Command Line Tools (`xcode-select --install`) or Xcode.
-
-Downloaded builds aren't notarized, so macOS blocks them the first time: System Settings › Privacy & Security › **Open Anyway**. Building it yourself avoids that.
+`install.sh` builds Encore, copies it to `~/Applications` and opens it. `./build.sh` only builds `build/Encore.app`.
 
 ## Data
 
