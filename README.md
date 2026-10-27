@@ -2,6 +2,8 @@
 
 A small now-playing card for Apple Music. Hover over Music in the Dock and a card appears above the icon with the cover, title, artist, a timeline you can scrub, and back / play-pause / skip.
 
+<p><img src="docs/card.png" width="320" alt="Encore's now-playing card"> <img src="docs/pinned.png" width="320" alt="A pinned Encore card showing its close button"></p>
+
 - Drag the card by its background and let go with **⌘** held to pin it (it stays on screen like picture-in-picture; hover shows ✕ to close). Let go without ⌘ to dismiss it.
 - Encore never launches Music; it only talks to it while it's already running.
 - No menu bar icon. Open Encore again from Applications to quit it, turn Open at Login on/off, or jump to the Accessibility settings.

@@ -40,7 +40,7 @@ func renderSnapshots(to dir: URL) {
         try? data.write(to: url)
         print(url.path)
     }
-    model.now = NowPlaying(id: "1", title: "Midnight City", artist: "M83", duration: 243, position: 71, playing: true)
+    model.now = NowPlaying(id: "1", title: "Golden Hour", artist: "Paper Coast", duration: 243, position: 71, playing: true)
     model.position = 71
     model.artwork = art
     save("1-playing")
